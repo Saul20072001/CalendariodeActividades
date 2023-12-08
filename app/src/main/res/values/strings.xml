@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Calendario de Actividades</string>
+
+    <!--MENU PRINCIPAL-->
+    <string name="NombreDeActividad">Nombre de la actividad</string>
+    <string name="Btn_Calendario">Fecha de la actividad</string>
+    <string name="Fecha">00/00/0000</string>
+    <string name="Btn_ActividadNueva">Actividad nueva</string>
+    <string name="Btn_Cumpleta">Actividad completada</string>
+    <string name="VerEvento"></string>
+    <string name="Btn_Revisar">Revisar</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="35dp">
+
+        <!--NOMBRE DE ACTIVIDAD-->
+        <EditText
+            android:id="@+id/NombreDeActividad"
+            android:hint="@string/NombreDeActividad"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/opensans"
+            android:maxLength="27"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <!--FECHA DE ACTIVIDAD-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/Btn_Calendario"
+                android:text="@string/Btn_Calendario"
+                app:icon="@drawable/icono_calendario2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/Fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:fontFamily="@font/opensans"
+                android:hint="@string/Fecha"
+                android:textSize="15sp"
+                tools:ignore="TextSizeCheck" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <!--BOTON ACTIVIDAD NUEVA-->
+            <Button
+                android:id="@+id/ActividadNueva"
+                android:text="@string/Btn_ActividadNueva"
+                app:icon="@drawable/actividad_nueva"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--VER ACTIVIDADES-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/VerEvento"
+            android:hint="@string/VerEvento"
+            android:layout_gravity="center"
+            android:textSize="15sp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
